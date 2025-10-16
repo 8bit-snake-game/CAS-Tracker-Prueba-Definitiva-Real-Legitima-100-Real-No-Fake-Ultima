@@ -274,3 +274,110 @@ footer.site-footer {
     gap: 20px;
   }
 }
+
+/* === MODO OSCURO === */
+.dark-mode {
+  --bg: #0d1117;
+  --card: #1a1f29;
+  --text: #e4e6eb;
+  --muted: #a1a1aa;
+  --primary: #005f8e; /* azul más oscuro */
+  --primary-2: #0077b6;
+  --accent: #64b9cf;
+  --danger: #ff5c5c;
+  --glass: rgba(32, 33, 36, 0.6);
+  --shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.dark-mode body {
+  background: linear-gradient(180deg, var(--bg), #0f141b 120%);
+  color: var(--text);
+}
+
+/* Header */
+.dark-mode header {
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  color: #fff;
+}
+
+/* Nav links */
+.dark-mode nav a {
+  color: rgba(255,255,255,0.9);
+}
+
+/* Tarjetas */
+.dark-mode .card {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+.dark-mode .card h3 {
+  color: var(--primary);
+}
+.dark-mode .card.highlight {
+  background: linear-gradient(180deg, rgba(0,119,182,0.18), rgba(144,224,239,0.08));
+  border: 1px solid rgba(144,224,239,0.2);
+}
+
+/* Reflexiones */
+.dark-mode .reflexion {
+  background: #1e242f;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.dark-mode .reflexion h3 {
+  color: var(--accent);
+}
+.dark-mode .reflexion small {
+  color: var(--muted);
+}
+
+/* Formularios */
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+  background: #202733;
+  border: 1px solid #394150;
+  color: #eaeaea;
+}
+.dark-mode input:focus,
+.dark-mode select:focus,
+.dark-mode textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 6px 18px rgba(0,119,182,0.25);
+}
+
+/* Botones */
+.dark-mode button {
+  color: #fff;
+}
+.dark-mode .btn {
+  background: var(--primary);
+}
+.dark-mode button.danger,
+.dark-mode .btn.danger {
+  background: var(--danger);
+}
+
+/* Tabla */
+.dark-mode table {
+  background: transparent;
+}
+.dark-mode th,
+.dark-mode td {
+  border-bottom: 1px solid #2c3440;
+  color: var(--text);
+}
+.dark-mode thead th {
+  color: var(--muted);
+}
+
+/* Footer */
+.dark-mode footer.site-footer {
+  color: var(--muted);
+}
+
+/* Contadores y textos secundarios */
+.dark-mode .word-counter {
+  background: rgba(0,0,0,0.3);
+  color: #a1a1aa;
+}
