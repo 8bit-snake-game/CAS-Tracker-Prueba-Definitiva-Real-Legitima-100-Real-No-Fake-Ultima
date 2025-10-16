@@ -318,7 +318,7 @@ footer.site-footer {
 }
 
 body.dark-mode {
-  background-color: linear-gradient(180deg, #0b192d, #00152d 120%);
+  background: linear-gradient(180deg, #0b192d, #00152d 120%);
   color: #e0e0e0;
 }
 
