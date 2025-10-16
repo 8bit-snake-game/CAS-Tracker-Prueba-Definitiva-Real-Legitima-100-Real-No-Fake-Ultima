@@ -296,7 +296,7 @@ footer.site-footer {
 
 /* Header */
 .dark-mode header {
-  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  background: linear-gradient(90deg, #013752, #003856);
   color: #fff;
 }
 
@@ -314,9 +314,10 @@ footer.site-footer {
 .dark-mode .card h3 {
   color: var(--primary);
 }
+
 .dark-mode .card.highlight {
-  background: linear-gradient(180deg, rgba(0,119,182,0.18), rgba(144,224,239,0.08));
-  border: 1px solid rgba(144,224,239,0.2);
+    background: linear-gradient(3deg, rgb(0 83 126 / 75%), rgb(33 103 117 / 65%));
+    border: 1px solid rgb(39 217 250 / 20%);
 }
 
 /* Reflexiones */
@@ -351,7 +352,7 @@ footer.site-footer {
   color: #fff;
 }
 .dark-mode .btn {
-  background: var(--primary);
+  background: #003854;
 }
 .dark-mode button.danger,
 .dark-mode .btn.danger {
