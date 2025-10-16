@@ -411,3 +411,27 @@ document.getElementById("exportWord")?.addEventListener("click", async () => {
   const blob = await Packer.toBlob(doc);
   saveAs(blob, "Reflexiones.docx");
 });
+
+//-----------------------------------------------
+
+// === Toggle Modo Oscuro ===
+const themeToggle = document.getElementById("themeToggle");
+
+// Detectar si el usuario ya tenía modo oscuro activo
+if (localStorage.getItem("darkMode") === "enabled") {
+  document.body.classList.add("dark-mode");
+}
+
+// Activar/desactivar modo oscuro al hacer clic
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Guardar preferencia
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+}
