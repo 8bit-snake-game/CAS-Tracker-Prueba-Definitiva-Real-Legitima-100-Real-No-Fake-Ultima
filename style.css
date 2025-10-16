@@ -318,9 +318,15 @@ footer.site-footer {
 }
 
 .dark-mode body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
   background: linear-gradient(180deg, #0b192d, #00152d 120%);
   color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.4;
 }
+
 
 /* Header */
 .dark-mode header {
