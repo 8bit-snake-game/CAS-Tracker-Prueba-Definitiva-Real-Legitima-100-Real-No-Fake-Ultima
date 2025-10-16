@@ -381,3 +381,33 @@ footer.site-footer {
   background: rgba(0,0,0,0.3);
   color: #a1a1aa;
 }
+
+.theme-toggle {
+  width: 50px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle .toggle-circle {
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease, background 0.3s ease;
+}
+
+body.dark-mode .theme-toggle {
+  background: #0077b6;
+}
+
+body.dark-mode .theme-toggle .toggle-circle {
+  left: 26px;
+  background: #fff;
+}
