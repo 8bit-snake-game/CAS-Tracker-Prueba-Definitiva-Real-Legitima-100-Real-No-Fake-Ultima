@@ -382,27 +382,37 @@ footer.site-footer {
   color: #a1a1aa;
 }
 
+/* === Posición del switch (esquina superior derecha) === */
 .theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 20px;
   width: 50px;
   height: 26px;
   background: #ccc;
   border-radius: 20px;
-  position: relative;
   cursor: pointer;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2000; /* para que esté por encima de todo */
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
 
 .theme-toggle .toggle-circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
   width: 22px;
   height: 22px;
   background: white;
   border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
   transition: left 0.3s ease, background 0.3s ease;
 }
 
+/* Modo oscuro visual del switch */
 body.dark-mode .theme-toggle {
   background: #0077b6;
 }
@@ -410,4 +420,3 @@ body.dark-mode .theme-toggle {
 body.dark-mode .theme-toggle .toggle-circle {
   left: 26px;
   background: #fff;
-}
