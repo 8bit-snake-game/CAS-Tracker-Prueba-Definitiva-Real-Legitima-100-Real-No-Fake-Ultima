@@ -312,7 +312,7 @@ footer.site-footer {
   box-shadow: var(--shadow);
 }
 .dark-mode .card h3 {
-  color: var(--primary);
+  color: #86a6b6;
 }
 
 .dark-mode .card.highlight {
