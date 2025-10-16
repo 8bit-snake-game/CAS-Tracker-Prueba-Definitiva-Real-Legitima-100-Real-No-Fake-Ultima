@@ -461,3 +461,8 @@ body.dark-mode #logoutBtn:hover {
   background: #e64545;
   box-shadow: 0 8px 18px rgba(230, 69, 69, 0.35);
 }
+
+body.dark-mode #tablaHorario td[contenteditable="true"] {
+  background: linear-gradient(180deg,#fff,#fbfdff);
+  border-radius: 6px;
+}
