@@ -317,11 +317,9 @@ footer.site-footer {
   --shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
 
-.dark-mode body {
-  margin: 0;
-  background: linear-gradient(180deg, #0b192d, #00152d 120%);
-  color: var(--text);
-  line-height:1.4;
+body.dark-mode {
+  background-color: linear-gradient(180deg, #0b192d, #00152d 120%);
+  color: #e0e0e0;
 }
 
 
